@@ -1,0 +1,15 @@
+.container {
+  border: 5px solid red;
+  margin: 5px;
+  padding: 5px;
+}
+
+.active {
+  background: red;
+  text-decoration: none;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
