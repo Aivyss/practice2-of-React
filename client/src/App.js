@@ -10,6 +10,7 @@ import {Route, Switch} from 'react-router-dom';
 import Index from './components/Index';
 import WithoutReduxRoot from './components/WithoutReduxRoot';
 import ApplyRedux from './components/redux_practice/ApplyRedux';
+import PACComp from './components/redux_practice/PresentAndContainer/PACComp';
 
 const indexListFromServer = [
     {
@@ -25,6 +26,7 @@ const indexListFromServer = [
     {key: 2, id: '/react-hook', content: 'React-Hook'},
     {key: 3, id: '/redux', content: 'Without Redux'},
     {key: 4, id: '/redux2', content: 'Redux'},
+    {key: 5, id: '/containers', content: 'Presentational And Container Component'},
 ];
 
 function App() {
@@ -53,6 +55,9 @@ function App() {
                     </Route>
                     <Route path='/redux2'>
                         <ApplyRedux />
+                    </Route>
+                    <Route path='/containers'>
+                        <PACComp />
                     </Route>
                     <Route path='/'>Not Found</Route>
                 </Switch>

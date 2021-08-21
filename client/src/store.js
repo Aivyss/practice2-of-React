@@ -2,7 +2,7 @@ import {createStore} from 'redux';
 
 /*
     param1: reducer
-    param2: 
+    param2: redux dev extension tools
  */
 export default createStore((state, action) => {
     let returnValue;

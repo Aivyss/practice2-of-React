@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {TextField, Button} from '@material-ui/core';
 import store from '../../store';
 
-export default function WithRedux1(props) {
+export default function WithRedux1() {
     const [num, setNum] = useState(0);
     const clickEvent = () => {
         store.dispatch({
